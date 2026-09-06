@@ -4,7 +4,7 @@ Automated Visual Speech Recognition using Spatiotemporal Neural Networks
 Questo repository contiene il progetto finale per il corso universitario di Deep Learning Foundations and Basic Algorithms. L'obiettivo è lo sviluppo e l'addestramento e il confronto di reti neurali in grado di effettuare il *lip-reading*. Il modello analizza sequenze di frame video ritagliati sulla regione della bocca per prevedere la parola pronunciata.
 
 In questo repository puoi trovare:
-* **'crop_lips_5.ipynb'**, lo script python per estrarre unicamente la regione di interesse individuando le coordinate delle labbra, standardizzare il dataset portando tutti i video ad una risoluzione fissa di 256x128 pixel e una lunghezza fissa di 90 frame e, infine, per ricostruire i file '.mp4' da rinominare con la parola effettivamente pronunciata. (lo script richiede i pesi pre-addestrati 'shape_predictor_68_face_landmarks.dat' per l'elaborazione dei video grezzi.
+* **`crop_lips_5.ipynb`**, lo script python per estrarre unicamente la regione di interesse individuando le coordinate delle labbra, standardizzare il dataset portando tutti i video ad una risoluzione fissa di 256x128 pixel e una lunghezza fissa di 90 frame e, infine, per ricostruire i file '.mp4' da rinominare con la parola effettivamente pronunciata. (lo script richiede i pesi pre-addestrati 'shape_predictor_68_face_landmarks.dat' per l'elaborazione dei video grezzi.
 * **`deep_project.html`**: Il notebook originale esportato in HTML, contenente tutto il codice, le fasi di esplorazione dati (EDA), l'architettura della rete e l'addestramento del modello.
 * **`lip_reading_presentation.pdf`**: Le slide utilizzate per la discussione del progetto, con la sintesi visiva dei risultati di business e tecnici.
 
