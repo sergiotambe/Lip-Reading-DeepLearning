@@ -13,7 +13,7 @@ In questo repository puoi trovare:
 * **Pre-processing:** Estrazione della Region of Interest (ROI) attorno alle labbra tramite script in Python, normalizzazione dei frame, zero-padding (portando le sequenze a una lunghezza fissa di 90 frame) e generazione di binary mask per uniformare la lunghezza delle sequenze video.
 * **Architettura Modello:** Rete ibrida Spaziotemporale basata su Transfer Learning. Utilizza la rete **MobileNetV2** pre-addestrata su ImageNet seguita da layer **LSTM (Long Short-Term Memory)** per catturare la sequenza temporale del movimento delle labbra.
 
-## Risultati Principali
+## Risultati Principali 
 * Addestramento completato su un dataset esteso tramite una campagna di data acquisition a **1439 video** distribuiti su **76 classi** di parole (partendo da una base iniziale di 650 video).
 * **Accuratezza / Metriche:** Il modello finale ha raggiunto un'**Accuracy di Validazione del 30.00%**, con una **Training Accuracy di circa l'80%**, in uno scenario *Closed Set* (Subject Dependent). Si tratta di un risultato molto promettente considerando la piccola dimensione del dataset per l'addestramento e il numero elevato di classi.
 * **Generalizzazione e Analisi degli Errori:** Il modello ha dimostrato ottime capacità di apprendere le dinamiche labiali su soggetti noti. Tramite l'analisi **Grad-CAM**, si è osservato che in scenari *Open Set* (soggetti non visti durante l'addestramento) il modello incontra difficoltà di generalizzazione (fenomeno del "Subject Gap"), tendendo a focalizzarsi su feature somatiche statiche (come mento o barba) piuttosto che sul solo movimento. Questo apre la strada a sviluppi futuri basati su dataset ancora più estesi e reti 3D-CNN.
