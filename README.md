@@ -5,7 +5,7 @@ Questo repository contiene il progetto finale per il corso universitario di Deep
 
 In questo repository puoi trovare:
 * **`crop_lips_5.ipynb`**, lo script python per estrarre unicamente la regione di interesse individuando le coordinate delle labbra, standardizzare il dataset portando tutti i video ad una risoluzione fissa di 256x128 pixel e una lunghezza fissa di 90 frame e, infine, per ricostruire i file '.mp4' da rinominare con la parola effettivamente pronunciata. (lo script richiede i pesi pre-addestrati 'shape_predictor_68_face_landmarks.dat' per l'elaborazione dei video grezzi.
-* **`1_logistica+cnn2d.html`, `2_hybrid.html`, `3_transfer.html`, `4_mixed_split.html`**: Il notebook originale diviso in quattro diversi file HTML, contenente tutto il codice, le fasi di esplorazione dati (EDA), le architetture della rete e l'addestramento dei modelli.
+* **`notebook`**: La cartella in cui è presente il notebook originale diviso in quattro diversi file HTML, contenente tutto il codice, le fasi di esplorazione dati (EDA), le architetture della rete e l'addestramento dei modelli.
 * **`lip_reading_presentation.pdf`**: Le slide utilizzate per la discussione del progetto, con la sintesi visiva dei risultati di business e tecnici.
 
 ## Architettura e Tecnologie
